@@ -51,6 +51,11 @@ jobs:
       with:
         cmd: test # will run `yarn test` command
     - name: Upload coverage to Codecov
-    - uses: codecov/codecov-action@v1
+    - uses: codecov/codecov-action@v1.0.5
       with:
+        name: test-action
         token: ${{ secrets.CODECOV_TOKEN }}
+        file: ./coverage/clover.xml
+        flags:  unittests
+        yml: ./codecov.yml
+        fail_ci_if_error: true
