@@ -1,6 +1,6 @@
 module.exports = {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  transform: {"\\.js$": ['babel-jest', {rootMode: "upward"}]},
+  transform: { '\\.js$': ['babel-jest', { rootMode: 'upward' }] },
   transformIgnorePatterns: ['/node_modules/'],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
