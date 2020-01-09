@@ -52,7 +52,7 @@ jobs:
         cmd: test # will run `yarn test` command
     - name: Upload coverage to Codecov
       id: coverage-codecov
-    - uses: codecov/codecov-action@v1.0.5
+      uses: codecov/codecov-action@v1.0.5
       with:
         name: test-action
         token: ${{ secrets.CODECOV_TOKEN }}
