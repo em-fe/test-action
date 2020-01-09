@@ -2,11 +2,12 @@ module.exports = {
   root: true,
   env: {
     node: true,
+    "jest/globals": true
   },
   extends: [
     'airbnb'
   ],
-  plugins: [],
+  plugins: ['jest'],
   rules: {
     'import/extensions': [
       'error',
