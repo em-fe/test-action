@@ -1,0 +1,24 @@
+{
+  "name": "test-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:iq9891/test-action.git",
+  "author": "李梦龙 <649076408@qq.com>",
+  "scripts": {
+    "lint": "yarn jslint && yarn style",
+    "jslint": "eslint . --ext '.js,.jsx,.ts,.tsx' --fix",
+    "style": "stylelint ./src/**/*.scss --fix",
+    "test": "jest"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "jest": "^24.9.0",
+    "stylelint": "^12.0.1"
+  }
+}
